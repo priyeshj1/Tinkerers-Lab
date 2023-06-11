@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Geologica", sans-serif;
+  box-sizing: border-box;
+  color: #f7f9f7;
+  letter-spacing: 1px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.middle h2::after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid rgba(#18314F, .25);
+  width: 20%;
+  margin: 3em auto 0;
+}
+
+.pp {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.self {
+  /* background: linear-gradient(rgb(159, 159, 247),rgb(173, 248, 173)); */
+  display: inline-block;
+  height: 75vh;
+  width: 30%;
+  margin: 5%;
+  padding: 30px;
+  text-align: center;
+}
+
+.self h3 {
+  letter-spacing: 2px;
+  margin: 15px;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.name {
+  margin-top: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 8px;
+  text-align: center;
+  color: #c3f3e3;
+}
+.name h3{
+  color: rgb(251, 240, 196);
+}
+
+.icons {
+  margin: auto;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 50px;
+  background-color: rgb(255, 255, 255, 0.25);
+}
+
+.icon {
+  margin: 0 5px;
+}
+
+.info {
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.task {
+  display: inline-block;
+  background-color: rgb(0, 0, 0, 0.2);
+  height: 75vh;
+  width: 80%;
+  margin: 5%;
+  margin-left: 2.5%;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.front {
+  background-image: url(1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  width: 100%;
+}
+
+.middle{
+  margin: 0;
+  /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Black-3D-Polygons-Dark-Pattern-Ultra-HD-Wallpaper.jpg); */
+  background-image: url(1.jpg);
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  font-family: 'Bebas Neue', sans-serif;
+  color: rgb(251, 240, 196);
+}
+.middle h2{
+  text-align: center;
+  margin: 5%;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 3em;
+  letter-spacing: 8px;
+  text-align: center;
+  color: #c3f3e3;
+}
+.text{
+  display: inline-block;
+  width: 50%;
+}
+.text h1{
+  margin: 2.5%;
+  margin-bottom: 20%;
+  color: #c3f3e3;
+  text-transform: uppercase;
+}
+.text h2{
+  margin: 2.5%;
+  margin-bottom: 15%;
+}
+.text h6{
+  margin: 5%;
+  margin-top: 0%;
+  color: rgb(163, 162, 162);
+}
+.button{
+  background-color: rgb(1, 146, 16);
+  border-radius: 15%;
+  padding: 2%;
+  margin: 5%;
+  color: rgb(252, 252, 252);
+}
+.logo{
+  background-color: aliceblue;
+  margin-top: 0%;
+  display: inline-block;
+  width: 30%;
+  height: 70%;
+  margin-left: 5%;
+  position: relative;
+  bottom: 100px;
+}
+.logo_image{
+  aspect-ratio: 1;
+  height: 500px;
+  position: relative;
+  bottom: 80px;
+  right: 150px;
+}
+.heading{
+  color: lightcyan;
+  margin: 5%;
+  margin-top: 2.5%;
+}
+.text h2{
+  color: rgb(251, 240, 196);
+}
+.middle h3{
+  margin-top: 3%;
+}
+/* .carousel{
+  position: relative;
+  height: 600px;
+  width: 50%;
+  margin: 0 auto;
+}
+.carousel_image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel_track-container{
+  background-color: #8BBEB2;
+  height: 100%;
+  position: relative;
+}
+.carousel_slide{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.carousel_button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.left{
+  left: -40px;
+}
+.right{
+  right: -40px;
+}
+.carousel_button img{
+  width: 12px;
+}
+.carousel_nav{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.carousel_indicator{
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: darkgray;
+  margin: 0 12px; 
+}
+.carousel_indicator current_slide{
+  background-color: rgba(0,0,0,0.75);
+} */
+
+
+@media only screen and (max-width: 600px) {
+  .self,
+  .task {
+      width: 90%;
+      margin: 5%;
+  }
+
+  .middle h2 {
+      font-size: 1.5rem;
+  }
+
+  .text,
+  .logo {
+      width: 90%;
+      margin: 5%;
+  }
+
+  .button {
+      margin: 5% auto;
+  }
+}
+
+.car-1{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.car-1 img{
+  height: 250px;
+  width: auto !important;
+  margin: 0 auto;
+}
+
+.carousel{
+  width: auto;
+}
+.hobbies-title{
+  text-align: center;
+  margin: 2.5%;
+}
+.hobbies-title h1{
+  margin: 5%;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 3em;
+  letter-spacing: 8px;
+  text-align: center;
+  color: #c3f3e3;
+}
+
+.lower{
+  padding: 5%;
+  background-image: url(1.jpg);
+}
+.experience h1{
+  text-align: center;
+  margin: 5%;
+  margin-top: 10%;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 3em;
+  letter-spacing: 8px;
+  text-align: center;
+  color: #c3f3e3;
+}
+.bottom{
+  height: 100vh;
+  background-image: url(1.jpg);
+  width: 100%;
+}
+#demo{
+  height: 50%;
+  width: auto;
+}
+.model{
+  margin: 0%;
+  padding: 5%;
+  text-align: center;
+}
+.model h1{
+  text-align: center;
+  margin: 5%;
+  margin-top: 0%;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 3em;
+  letter-spacing: 8px;
+  text-align: center;
+  color: #c3f3e3;
+}
