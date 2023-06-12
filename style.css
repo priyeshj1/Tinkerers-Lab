@@ -9,14 +9,14 @@
 
 body{
   overflow-x: hidden;
-}
 
-.middle h2::after {
+}
+h2::after {
   content: '';
+  border-bottom: 1px solid #b0cef4;
   display: block;
-  border-bottom: 1px solid rgba(#18314F, .25);
-  width: 20%;
-  margin: 3em auto 0;
+  width: 50%;
+  margin: 20px auto 0;
 }
 
 .pp {
@@ -27,8 +27,11 @@ body{
 
 .self {
   /* background: linear-gradient(rgb(159, 159, 247),rgb(173, 248, 173)); */
-  display: inline-block;
-  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 75vh;
   width: 30%;
   margin: 5%;
   padding: 30px;
@@ -56,7 +59,6 @@ body{
 }
 
 .icons {
-  margin: auto;
   width: fit-content;
   border-radius: 20px;
   padding: 10px;
@@ -78,9 +80,11 @@ a {
 }
 
 .task {
-  display: inline-block;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: rgb(0, 0, 0, 0.2);
-  height: 75vh;
+  min-height: 75vh;
   width: 80%;
   margin: 5%;
   margin-left: 2.5%;
@@ -93,7 +97,7 @@ a {
   background-image: url(1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   margin: 0;
   width: 100%;
@@ -116,24 +120,23 @@ a {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 2rem;
-  margin-bottom: 3em;
   letter-spacing: 8px;
   text-align: center;
   color: #c3f3e3;
+
 }
 .text{
   display: inline-block;
   width: 50%;
 }
 .text h1{
-  margin: 2.5%;
-  margin-bottom: 20%;
+  margin: 20px;
+
   color: #c3f3e3;
   text-transform: uppercase;
 }
 .text h2{
-  margin: 2.5%;
-  margin-bottom: 15%;
+  margin: 35px;
 }
 .text h6{
   margin: 5%;
@@ -144,25 +147,14 @@ a {
   background-color: rgb(1, 146, 16);
   border-radius: 15%;
   padding: 2%;
-  margin: 5%;
+  margin: 35px;
   color: rgb(252, 252, 252);
 }
-.logo{
-  background-color: aliceblue;
-  margin-top: 0%;
-  display: inline-block;
-  width: 30%;
-  height: 70%;
-  margin-left: 5%;
-  position: relative;
-  bottom: 100px;
-}
+
 .logo_image{
-  aspect-ratio: 1;
-  height: 500px;
-  position: relative;
-  bottom: 80px;
-  right: 150px;
+  width: 200px;
+  height: auto; 
+  background-color: aliceblue;
 }
 .heading{
   color: lightcyan;
@@ -232,28 +224,6 @@ a {
 } */
 
 
-@media only screen and (max-width: 600px) {
-  .self,
-  .task {
-      width: 90%;
-      margin: 5%;
-  }
-
-  .middle h2 {
-      font-size: 1.5rem;
-  }
-
-  .text,
-  .logo {
-      width: 90%;
-      margin: 5%;
-  }
-
-  .button {
-      margin: 5% auto;
-  }
-}
-
 .car-1{
   height: 100%;
   display: flex;
@@ -273,12 +243,12 @@ a {
   text-align: center;
   margin: 2.5%;
 }
-.hobbies-title h1{
-  margin: 5%;
+.hobbies-title h2{
+
   font-weight: 400;
   text-transform: uppercase;
   font-size: 2rem;
-  margin-bottom: 3em;
+  margin: 35px;
   letter-spacing: 8px;
   text-align: center;
   color: #c3f3e3;
@@ -288,19 +258,18 @@ a {
   padding: 5%;
   background-image: url(1.jpg);
 }
-.experience h1{
+.experience h2{
   text-align: center;
-  margin: 5%;
-  margin-top: 10%;
+  margin: 35px;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 2rem;
-  margin-bottom: 3em;
   letter-spacing: 8px;
   text-align: center;
   color: #c3f3e3;
 }
 .bottom{
+  
   height: 100vh;
   background-image: url(1.jpg);
   width: 100%;
@@ -314,15 +283,47 @@ a {
   padding: 5%;
   text-align: center;
 }
-.model h1{
+.model h2{
   text-align: center;
-  margin: 5%;
-  margin-top: 0%;
+  margin: 35px;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 2rem;
-  margin-bottom: 3em;
   letter-spacing: 8px;
   text-align: center;
   color: #c3f3e3;
+}
+
+@media all and (max-width:1200px) {
+  .logo{
+    display: none;
+  }
+  .task{
+    justify-content: center;
+  }
+  .front{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .self{
+    width: 100%;
+  }
+  .text h2,.text h1{
+    margin: 10px 0;
+  }
+
+  .button{
+    margin: 10px;
+  }
+
+  .text{
+    width: 100%;
+  }
+}
+
+@media all and (max-width:1284px) {
+  .button{
+    margin: 20px 15px;
+  }
 }
